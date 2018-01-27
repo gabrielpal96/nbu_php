@@ -28,7 +28,17 @@ if (!isset($_SESSION["uid"])){
         <li><a href="profile.php">PRODUCT</a> </li>
         <li style="width: 300px;left: 10px;top: 10px;"><input type="text" class="form-control" id="search"> </li>
         <li style="top: 10px;left: 20px;"><button type="submit" class="btn btn-primary" id="search_btn">Search</button> </li>
+
     </ul>
+    <?php
+    if (($_SESSION['uid'])==1){
+    echo "
+    <ul style='margin-left: 50px' class='nav navbar-nav'>
+        <li><a href='admin.php'>Admin</a> </li>
+    </ul>
+    ";
+    }
+?>
     <ul class="nav navbar-nav navbar-right">
         <li><a href="#" id="cart_container" class="dropdown-toggle" data-toggle="dropdown">
                 <span class="glyphicon glyphicon-shopping-cart"></span>CART <span class="badge">0</span>

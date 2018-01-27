@@ -33,6 +33,18 @@ $(document).ready(function () {
 
         })
     }
+    allUser();
+    function allUser() {
+        $.ajax({
+            url:"adminAction.php",
+            method:"POST",
+            data: {getUser:1},
+            success: function (data) {
+                $("#get_user").html(data);
+            }
+
+        })
+    }
 
     $("body").delegate(".category","click",function(event) {
         event.preventDefault();
@@ -135,6 +147,7 @@ $(document).ready(function () {
             }
         })
     }
+
     $("body").delegate(".qtr","keyup",function () {
        var pid=$(this).attr("pid");
        var qtr=$("#qtr-"+pid).val();
@@ -170,6 +183,24 @@ $(document).ready(function () {
             success:function (data) {
                 $("#cart_msg").html(data);
                 cart_checkout();
+            }
+        })
+    })
+
+//    admin panel
+    $("body").delegate(".deleteUser","click",function (event) {
+        event.preventDefault();
+        var pid=$(this).attr("delete_id");
+        // alert(pid);
+        $.ajax({
+            url:    "adminAction.php",
+            method: "POST",
+            data: {removeUser:1,delete_id:pid},
+            success:function (data) {
+                $("#cart_msg").html(data);
+                 alert(data);
+                window.location.href="admin/allUser.php";
+
             }
         })
     })
