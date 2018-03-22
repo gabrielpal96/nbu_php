@@ -32,24 +32,6 @@ if (isset($_SESSION["uid"])){
     </ul>
     <ul class="nav navbar-nav navbar-right">
         <li><a href="loginForm.php" ><span class="glyphicon glyphicon-user"></span>LOGIN</a>
-<!--        <ul class="dropdown-menu">-->
-<!--            <div style="width: 300px;">-->
-<!--                <div class="panel panel-primary">-->
-<!--                    <div class="panel-primary">Login</div>-->
-<!--                    <div class="panel-heading">-->
-<!--                        <label for="email">Email</label>-->
-<!--                        <input type="email" class="form-control" id="email"required/>-->
-<!--                        <label for="email">Password</label>-->
-<!--                        <input type="password" class="form-control" id="password" required/>-->
-<!--                        <p><br/></p>-->
-<!--                        <a href="#" style="color: white; list-style: none;">Forgotten Password</a>-->
-<!--                        <input type="submit" class="btn btn-success" style="float:right; "id="login" value="Login">-->
-<!--                    </div>-->
-<!--                    <div class="panel-footer" id="e_msg"></div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!---->
-<!--        </ul>-->
         </li>
         <li><a href="registration.php"><span class="glyphicon glyphicon-user"></span>REGISTRATION</a> </li>
     </ul>
@@ -64,22 +46,10 @@ if (isset($_SESSION["uid"])){
         <div class="col-md-2">
             <div class="nav nav-pills nav-stacked">
                 <div id="get_category"></div>
-<!--                <li class="active"><a href="#"><h4>Categories</h4></a> </li>-->
-<!--                <li><a href="#">Categories</a> </li>-->
-<!--                <li><a href="#">Categories</a> </li>-->
-<!--                <li><a href="#">Categories</a> </li>-->
-<!--                <li><a href="#">Categories</a> </li>-->
-
             </div>
 
                 <div class="nav nav-pills nav-stacked">
                     <div id="get_brand"></div>
-<!--                <li class="active"><a href="#"><h4>Brand</h4></a> </li>-->
-<!--                <li><a href="#">Categories</a> </li>-->
-<!--                <li><a href="#">Categories</a> </li>-->
-<!--                <li><a href="#">Categories</a> </li>-->
-<!--                <li><a href="#">Categories</a> </li>-->
-
             </div>
         </div>
         <div class="col-md-8">
@@ -89,24 +59,13 @@ if (isset($_SESSION["uid"])){
                     <div id="get_product">
 
                     </div>
-<!--                    <div class="col-md-4">-->
-<!--                        <div class="panel panel-info">-->
-<!--                            <div class="panel-heading"> samsung</div>-->
-<!--                            <div class="panel-body">-->
-<!--                                <img style="height: 300px;width: 300px;" src="product_images/6954588583_baede2f9e0_o.jpg"/>-->
-<!--                            </div>-->
-<!--                            <div class="panel-heading">500 lv-->
-<!--                            <button style="float:right" class="btn btn-danger btn-xs">AddToCart</button>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
+
                 </div>
                 <div class="panel-footer">&copy;2018</div>
             </div>
         </div>
         <div class="col-md-1"></div>
     </div>
-<!--    INSERT INTO `products1` (`product_id`, `product_cat`, `proct_brand`, `product_title`, `product_price`, `product_desc`, `product_image`, `product_keywords`) VALUES (NULL, '1', '1', 'apple test', '555', 'apple test 1 ', 'alfa.JPG', 'apple test ');-->
 </div>
 </body>
 </html>
